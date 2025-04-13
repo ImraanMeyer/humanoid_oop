@@ -43,13 +43,13 @@ The code is organized into the following classes:
 
 ### [Key Design Decisions](#key-design-decisions)
 
-- Abstraction: The Sensor abstract base class provides a common interface for all sensors, making it easy to add new sensor types in the future.
-- Modularity: The system is divided into classes with specific responsibilities, improving maintainability and scalability.
-- Layered Architecture: The code follows a layered architecture (Perception, Planning, Actuation) that mirrors the functional architecture of a typical robot.
-- Task Learning: The TaskLearner class introduces a basic task learning capability, allowing the robot to learn and execute new tasks.
-- Simplified Simulation: The ProximitySensor uses a simplified simulation for human detection, directly generating x, y coordinates to avoid complex calculations. This was a design choice to keep the focus on the overall system architecture.
-- Configuration File: The use of `robot_tasks.json` to store task definitions allows for easy modification and extension of robot behaviors without modifying the core code.
-- Logging: The inclusion of a logging mechanism provides better visibility into the robot's internal state and decision-making process.
+- **Abstraction**: The Sensor abstract base class provides a common interface for all sensors, making it easy to add new sensor types in the future.
+- **Modularity**: The system is divided into classes with specific responsibilities, improving maintainability and scalability.
+- **Layered Architecture**: The code follows a layered architecture (Perception, Planning, Actuation) that mirrors the functional architecture of a typical robot.
+- **Task Learning**: The TaskLearner class introduces a basic task learning capability, allowing the robot to learn and execute new tasks.
+- **Simplified Simulation**: The ProximitySensor uses a simplified simulation for human detection, directly generating x, y coordinates to avoid complex calculations. This was a design choice to keep the focus on the overall system architecture.
+- **Configuration File**: The use of `robot_tasks.json` to store task definitions allows for easy modification and extension of robot behaviors without modifying the core code.
+- **Logging**: The inclusion of a logging mechanism provides better visibility into the robot's internal state and decision-making process.
 
 ## Usage
 
