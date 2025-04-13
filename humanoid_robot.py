@@ -1,14 +1,16 @@
-from abc import ABC, abstractmethod
-from typing import Dict, List, Any
 import random
 import os
 import json
-from faker import Faker
 import math
+import logging
 
+from faker import Faker
+from abc import ABC, abstractmethod
+from typing import Dict, List, Any
 from collections import deque
 
-from utils.logger.logging import logging
+logging.basicConfig(level=logging.INFO,
+                    format="%(asctime)s - %(levelname)s - %(message)s", datefmt="%Y-%m-%d %H:%M:%S")
 
 
 class Sensor(ABC):
