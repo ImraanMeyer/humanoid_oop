@@ -78,7 +78,8 @@ Install the required dependencies (`Faker`):
 pip install -r requirements.txt
 ```
 
-Running the Simulation
+### [Running the Simulation](#running-the-simulation)
+
 To run the simulation, execute the main program:
 ```
 python humanoid_robot.py
