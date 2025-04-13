@@ -1,6 +1,6 @@
 # Humanoid Robot Simulation
 
-Table of Contents
+## Table of Contents
 - [Project Description](#project-description)
 - [Core Architecture / Key Design Decisions](#core-architecture-key-design-decisions)
     - [File Structure](#file-structure)
@@ -31,7 +31,7 @@ The project has the following file structure:
 ### [Class Structure](#class-structure)
 The code is organized into the following classes:
 
-- `Sensor` (ABC): An abstract base class for all sensors. Defines the common interface for all sensors, including the abstract methods read_data() and calibrate(), and the abstract property sensor_type.
+- `Sensor` (`ABC`): An abstract base class for all sensors. Defines the common interface for all sensors, including the abstract methods read_data() and calibrate(), and the abstract property sensor_type.
 - `VisionSensor` (`Sensor`): Simulates a camera/vision system for object detection.
 - `ProximitySensor` (`Sensor`): Simulates a proximity sensor for human detection.
 - `EnvironmentSensor` (`Sensor`): Simulates environmental scanning sensors.
