@@ -1,0 +1,61 @@
+{
+  "pick_up_cup": {
+    "probability": 0.5,
+    "object": "cup",
+    "steps": [
+      "approach_cup",
+      "grasp_cup",
+      "lift_cup"
+    ]
+  },
+  "pick_up_book": {
+    "probability": 0.1,
+    "object": "book",
+    "steps": [
+      "approach_book",
+      "grasp_book",
+      "lift_book"
+    ]
+  },
+  "pick_up_pen": {
+    "probability": 0.1,
+    "object": "pen",
+    "steps": [
+      "approach_pen",
+      "grasp_pen",
+      "lift_pen"
+    ]
+  },
+  "avoid_human": {
+    "probability": 0.7,
+    "steps": [
+      "stop_moving",
+      "calculate_avoidance_path",
+      "move_around_human"
+    ]
+  },
+  "avoid_obstacle": {
+    "probability": 0.2,
+    "steps": [
+      "stop_moving",
+      "scan_environment",
+      "find_clear_path"
+    ]
+  },
+  "move_forward": {
+    "probability": 0.3,
+    "steps": [
+      "scan_path",
+      "calculate_trajectory",
+      "initiate_movement"
+    ]
+  },
+  "release_object": {
+    "probability": 0.1,
+    "steps": [
+      "lower_arm",
+      "open_gripper",
+      "retract_arm"
+    ]
+  }
+}
